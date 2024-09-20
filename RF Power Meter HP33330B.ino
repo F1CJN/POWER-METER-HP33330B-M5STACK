@@ -9,13 +9,13 @@
  * Version V8 avec choix attenuateur d'entrée
  * Version V9 avec choix des couleurs de texte
  * Version V2.00 avec choix du type de diode par le bouton central
- * Version V2.1  Grosse amélioation dans le calcul avec une interpolation logarithmique entre -10 et -30 dBm 
+ * Version V2.1  Grosse amélioration dans le calcul avec une interpolation logarithmique entre -10 et -30 dBm 
  * Version V2.2  avec  "Alerte niveau" sur écran  si P>20dBm   13/03/2023
  *
  * Voltage = voltage read by the ADS1115 from the output of the OP192 == (HP33330B voltage x -2)
 */
 
-#include <M5Stack.h>
+#include <M5unified.h>
 #include <ADS1115_WE.h>
 #include <Wire.h>
 #include <EEPROM.h>
