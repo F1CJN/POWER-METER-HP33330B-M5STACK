@@ -15,7 +15,7 @@
  * Voltage = voltage read by the ADS1115 from the output of the OP192 == (HP33330B voltage x -2)
 */
 
-#include <M5unified.h>
+#include <M5Unified.h>
 #include <ADS1115_WE.h>
 #include <Wire.h>
 #include <EEPROM.h>
@@ -80,7 +80,7 @@ void setup(void) {
   }
   adc.setVoltageRange_mV(ADS1115_RANGE_2048);  //ADC range max= 2,047V  avec 32768 valeurs
   M5.Lcd.setTextColor(YELLOW, BLACK);
-  M5.lcd.fillScreen(BLACK);
+  M5.Lcd.fillScreen(BLACK);
   M5.Lcd.drawCentreString("HP33330B", 160, 60, 4);
   M5.Lcd.setTextColor(WHITE, BLACK);
   M5.Lcd.drawCentreString("RF POWER METER", 160, 100, 4);
