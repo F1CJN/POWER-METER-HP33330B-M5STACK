@@ -254,7 +254,7 @@ void loop() {
     if ((puissance_uW > 1000) && (att == 20)) { M5.Lcd.drawCentreString("       " + String(puissance_uW / 10000) + " W     ", 160, 197, 4); }
 
     if (att == 30)  // affichage puissance avec attenuateur = 30 dB
-    { M5.Lcd.drawCentreString("       " + String(puissance_uW / 1000) + " W     ", 160, 197, 4); }
+    { M5.Lcd.drawCentreString("       " + String(puissance_uW / 1) + "uW     ", 160, 197, 4); }
 
     if (att == 40)  // affichage puissance avec attenuateur = 40 dB
     { M5.Lcd.drawCentreString("       " + String(puissance_uW / 100) + " W     ", 160, 197, 4); }
